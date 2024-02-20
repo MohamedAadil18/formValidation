@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <form>
+        <div class="container">
+            <h1>Registration Form</h1>
+            <div class="form-details">
+                <div class="name-field inp">
+                    <input type="text" required id="name" onkeyup="validateName()">
+                    <div class="icon-name"></div>
+                    <span>Name</span>
+                    <p class="name-msg"></p>
+                </div>
+                <div class="email-field inp">
+                    <input type="email" id="email" required onkeyup="validateEmail()">
+                    <div class="icon-email"></div>
+                    <span>Email</span>
+                    <p class="email-msg"></p>
+                </div>
+                <div class="pass-field inp">
+                    <input type="password" required id="pass" onkeyup="validatePass()">
+                    <div class="icon-pass"></div>
+                    <span>Password</span>
+                    <p class="pass-msg"></p>
+                </div>
+                <div class="repeat-pass-field inp">
+                    <input type="password" required id="repeat-pass" onkeyup="validateRepeatPass()">
+                    <div class="icon-repeat-pass"></div>
+                    <span>Repeat Password</span>
+                    <p class="repeat-pass-msg"></p>
+                </div>
+                <div class="ph-field inp">
+                    <input type="text" required id="phn-num" onkeyup="validatePhn()">
+                    <div class="icon-phn"></div>
+                    <span>Phone no.</span>
+                    <p class="phn-msg"></p>
+                </div>
+            </div>
+            <div class="footer">
+                <p>By creating an account, you are ready to accept our <a href="#">Terms & Conditions</a></p>
+                <p class="login">Already have an account? <a href="#">Login here</a></p>
+                <button onclick="validateForm()">Register</button>
+                <p id="response"></p>
+            </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>
